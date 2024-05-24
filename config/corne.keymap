@@ -47,9 +47,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB     &trans                &kp N7              &kp N8             &kp N9                 &trans    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS   &kp MINUS  &kp ASTERISK  &kp BSPC
-&bt BT_CLR  &kp TAB               &kp N4              &kp N5             &kp N6                 &kp N0    &kp LBKT              &kp RBKT               &kp EQUAL  &kp RIGHT  &trans        &trans
-&kp LSHFT   &hm LEFT_SHIFT GRAVE  &hm LCTRL NUMBER_1  &hm LALT NUMBER_2  &hm LEFT_GUI NUMBER_3  &trans    &trans                &trans                 &trans     &trans     &trans        &trans
+&kp TAB     &trans                &kp N7              &kp N8             &kp N9                 &trans    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS   &kp MINUS  &kp ASTERISK          &kp BSPC
+&bt BT_CLR  &kp TAB               &kp N4              &kp N5             &kp N6                 &kp N0    &kp LBKT              &kp RBKT               &kp EQUAL  &kp SLASH  &kp NON_US_BACKSLASH  &trans
+&kp LSHFT   &hm LEFT_SHIFT GRAVE  &hm LCTRL NUMBER_1  &hm LALT NUMBER_2  &hm LEFT_GUI NUMBER_3  &trans    &trans                &kp RIGHT_GUI          &kp RALT   &kp RCTRL  &kp RSHFT             &trans
                                                       &trans             &trans                 &trans    &trans                &trans                 &trans
             >;
         };

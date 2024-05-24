@@ -58,11 +58,11 @@
             label = "WS5";
         };
 
-        ws7: ws6 {
+        ws7: ws7 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT_GUI &kp N7>;
-            label = "WS6";
+            label = "WS7";
         };
 
         ws8: ws8 {

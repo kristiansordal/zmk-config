@@ -58,13 +58,6 @@
             label = "WS5";
         };
 
-        ws6: ws6 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LGUI &kp NUMBER_6>;
-            label = "WS6";
-        };
-
         ws7: ws6 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -98,6 +91,13 @@
             #binding-cells = <0>;
             bindings = <&kp LGUI &kp SPACE>;
             label = "ALFRED";
+        };
+
+        ws6: ws6 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LGUI &kp NUMBER_6>;
+            label = "WS6";
         };
     };
 
@@ -152,7 +152,7 @@
         layer_3 {
             bindings = <
 &trans  &trans  &ws7  &ws8    &ws9    &trans     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &ws4  &ws5    &ws6    &ws10      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &ws4  &ws5    &as6    &ws10      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &ws1  &ws2    &ws3    &alfred    &trans  &trans  &trans  &trans  &trans  &trans
                       &trans  &trans  &trans     &trans  &trans  &trans
             >;

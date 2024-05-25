@@ -111,9 +111,24 @@
 
             label = "WS6";
         };
+
+        parenthesis: parenthesis {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS>;
+            label = "PARENTHESIS";
+        };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        parenthesis {
+            bindings = <&parenthesis>;
+            key-positions = <6 7>;
+            layers = <0>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";

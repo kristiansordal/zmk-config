@@ -124,9 +124,19 @@
         compatible = "zmk,combos";
 
         parenthesis {
-            bindings = <&parenthesis>;
+            bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <6 7>;
             layers = <0>;
+        };
+
+        brackets {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <18 19>;
+        };
+
+        braces {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <30 31>;
         };
     };
 

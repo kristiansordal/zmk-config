@@ -214,10 +214,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB     &mo 2                 &kp N7              &kp N8             &kp N9                 &kp SQT              &trans   &kp ASTERISK  &kp PLUS   &kp MINUS  &trans         &kp BSPC
-&bt BT_CLR  &kp TAB               &kp N4              &kp N5             &kp N6                 &kp N0               &equals  &not_equal    &kp EQUAL  &kp SLASH  &kp BACKSLASH  &trans
-&kp LSHFT   &hm LEFT_SHIFT GRAVE  &hm LCTRL NUMBER_1  &hm LALT NUMBER_2  &hm LEFT_GUI NUMBER_3  &kp DOUBLE_QUOTES    &trans   &trans        &less      &greater   &trans         &trans
-                                                      &trans             &trans                 &trans               &trans   &trans        &trans
+&kp TAB     &mo 2                 &kp N7              &kp N8             &kp N9                 &kp SQT              &kp TILDE  &kp ASTERISK  &kp PLUS   &kp MINUS  &trans         &kp BSPC
+&bt BT_CLR  &kp TAB               &kp N4              &kp N5             &kp N6                 &kp N0               &equals    &not_equal    &kp EQUAL  &kp SLASH  &kp BACKSLASH  &trans
+&kp LSHFT   &hm LEFT_SHIFT GRAVE  &hm LCTRL NUMBER_1  &hm LALT NUMBER_2  &hm LEFT_GUI NUMBER_3  &kp DOUBLE_QUOTES    &trans     &trans        &less      &greater   &trans         &trans
+                                                      &trans             &trans                 &trans               &trans     &trans        &trans
             >;
         };
 
@@ -229,10 +229,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp EXCL  &kp F7  &kp F8  &kp F9  &kp F10    &kp C_VOLUME_UP    &kp AMPS              &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &kp LPAR  &kp RPAR   &kp BSPC
-&kp LCTRL  &trans    &kp F4  &kp F5  &kp F6  &kp F11    &kp C_VOLUME_DOWN  &kp LEFT              &kp DOWN                              &kp UP    &kp RIGHT  &kp GRAVE
-&kp LSHFT  &trans    &kp F1  &kp F2  &kp F3  &kp F12    &kp C_MUTE         &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC                  &kp RBRC  &kp PIPE   &kp TILDE
-                             &trans  &trans  &trans     &trans             &trans                &trans
+&kp TAB    &kp EXCL  &kp F7  &kp F8  &kp F9  &kp F10    &trans      &trans                &trans                &trans     &kp C_VOLUME_UP    &kp BSPC
+&kp LCTRL  &trans    &kp F4  &kp F5  &kp F6  &kp F11    &kp LEFT    &kp DOWN              &kp UP_ARROW          &kp RIGHT  &kp C_VOLUME_DOWN  &kp GRAVE
+&kp LSHFT  &trans    &kp F1  &kp F2  &kp F3  &kp F12    &kp C_MUTE  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans     &kp C_MUTE         &kp TILDE
+                             &trans  &trans  &trans     &trans      &trans                &trans
             >;
         };
 

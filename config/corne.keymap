@@ -146,6 +146,20 @@
             bindings = <&kp GREATER_THAN &kp EQUAL>;
             label = "GREATER";
         };
+
+        bracket: bracket {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET>;
+            label = "BRACKET";
+        };
+
+        brace: brace {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE>;
+            label = "BRACE";
+        };
     };
 
     combos {
@@ -186,6 +200,21 @@
             bindings = <&kp UNDERSCORE>;
             key-positions = <16 17>;
         };
+
+        ocpar {
+            bindings = <&parenthesis>;
+            key-positions = <3 2>;
+        };
+
+        ocbra {
+            bindings = <&bracket>;
+            key-positions = <14 15>;
+        };
+
+        ocbraces {
+            bindings = <&brace>;
+            key-positions = <26 27>;
+        };
     };
 
     keymap {
@@ -214,7 +243,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB     &mo 2                 &kp N7              &kp N8             &kp N9                 &kp SQT              &kp TILDE  &kp ASTERISK  &kp PLUS   &kp MINUS  &trans         &kp BSPC
+&kp TAB     &trans                &kp N7              &kp N8             &kp N9                 &kp SQT              &kp TILDE  &kp ASTERISK  &kp PLUS   &kp MINUS  &trans         &kp BSPC
 &bt BT_CLR  &kp TAB               &kp N4              &kp N5             &kp N6                 &kp N0               &equals    &not_equal    &kp EQUAL  &kp SLASH  &kp BACKSLASH  &trans
 &kp LSHFT   &hm LEFT_SHIFT GRAVE  &hm LCTRL NUMBER_1  &hm LALT NUMBER_2  &hm LEFT_GUI NUMBER_3  &kp DOUBLE_QUOTES    &trans     &trans        &less      &greater   &trans         &trans
                                                       &trans             &trans                 &trans               &trans     &trans        &trans
@@ -238,10 +267,10 @@
 
         layer_3 {
             bindings = <
-&trans  &kp K   &ws7  &ws8    &ws9    &trans     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &ws4  &ws5    &ws6    &ws10      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &ws1  &ws2    &ws3    &alfred    &trans  &trans  &trans  &trans  &trans  &trans
-                      &trans  &trans  &trans     &trans  &trans  &trans
+&trans  &trans  &ws7  &ws8    &ws9    &trans     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans
+&trans  &trans  &ws4  &ws5    &ws6    &ws10      &trans        &trans        &trans        &trans        &trans  &trans
+&trans  &trans  &ws1  &ws2    &ws3    &alfred    &trans        &trans        &trans        &trans        &trans  &trans
+                      &trans  &trans  &trans     &trans        &trans        &trans
             >;
         };
     };

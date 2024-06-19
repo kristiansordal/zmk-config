@@ -200,21 +200,6 @@
             bindings = <&kp UNDERSCORE>;
             key-positions = <16 17>;
         };
-
-        ocpar {
-            bindings = <&parenthesis>;
-            key-positions = <3 2>;
-        };
-
-        ocbra {
-            bindings = <&bracket>;
-            key-positions = <14 15>;
-        };
-
-        ocbraces {
-            bindings = <&brace>;
-            key-positions = <26 27>;
-        };
     };
 
     keymap {

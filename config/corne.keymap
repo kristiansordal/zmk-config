@@ -215,6 +215,21 @@
             bindings = <&brace>;
             key-positions = <32 31 30>;
         };
+
+        excl {
+            bindings = <&kp HASH>;
+            key-positions = <28 29>;
+        };
+
+        atsign {
+            bindings = <&kp AT_SIGN>;
+            key-positions = <28 27>;
+        };
+
+        pound {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <26 27>;
+        };
     };
 
     keymap {
@@ -243,10 +258,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB     &trans                &kp N7              &kp N8             &kp N9                 &kp SQT              &kp TILDE  &kp ASTERISK  &kp PLUS   &kp MINUS  &trans         &kp BSPC
-&bt BT_CLR  &kp TAB               &kp N4              &kp N5             &kp N6                 &kp N0               &equals    &not_equal    &kp EQUAL  &kp SLASH  &kp BACKSLASH  &trans
-&kp LSHFT   &hm LEFT_SHIFT GRAVE  &hm LCTRL NUMBER_1  &hm LALT NUMBER_2  &hm LEFT_GUI NUMBER_3  &kp DOUBLE_QUOTES    &trans     &trans        &less      &greater   &trans         &trans
-                                                      &trans             &trans                 &trans               &trans     &trans        &trans
+&kp TAB     &trans                &kp N7              &kp N8             &kp N9                 &kp SQT              &kp TILDE    &kp ASTERISK  &kp PLUS   &kp MINUS  &kp CARET      &kp BSPC
+&bt BT_CLR  &kp TAB               &kp N4              &kp N5             &kp N6                 &kp N0               &equals      &not_equal    &kp EQUAL  &kp SLASH  &kp BACKSLASH  &trans
+&kp LSHFT   &hm LEFT_SHIFT GRAVE  &hm LCTRL NUMBER_1  &hm LALT NUMBER_2  &hm LEFT_GUI NUMBER_3  &kp DOUBLE_QUOTES    &kp PERCENT  &kp AMPS      &less      &greater   &trans         &trans
+                                                      &trans             &trans                 &trans               &trans       &trans        &trans
             >;
         };
 

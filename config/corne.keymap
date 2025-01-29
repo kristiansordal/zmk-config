@@ -296,10 +296,10 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &ws7  &ws8    &ws9    &trans     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans
-&trans  &trans  &ws4  &ws5    &ws6    &ws10      &trans        &trans        &trans        &trans        &trans  &trans
-&trans  &trans  &ws1  &ws2    &ws3    &alfred    &trans        &trans        &trans        &trans        &trans  &trans
-                      &trans  &trans  &trans     &trans        &trans        &trans
+&caps_word  &trans  &ws7  &ws8    &ws9    &trans     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans
+&trans      &trans  &ws4  &ws5    &ws6    &ws10      &trans        &trans        &trans        &trans        &trans  &trans
+&trans      &trans  &ws1  &ws2    &ws3    &alfred    &trans        &trans        &trans        &trans        &trans  &trans
+                          &trans  &trans  &trans     &trans        &trans        &trans
             >;
         };
     };
